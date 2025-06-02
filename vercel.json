@@ -2,17 +2,8 @@
   "version": 2,
   "functions": {
     "api/generate.js": {
-      "runtime": "nodejs18.x",  
-      "maxDuration": 15 
-  },
-  "routes": [
-    {
-      "src": "/api/(.*)",  
-      "dest": "/api/$1"    
-    },
-    {
-      "src": "/(.*)",       
-      "dest": "/public/$1" 
+      "runtime": "nodejs18.x",
+      "maxDuration": 25 
     }
-  ]
-    }
+  }
+}
