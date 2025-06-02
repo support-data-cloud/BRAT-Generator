@@ -27,7 +27,7 @@ export default function HomePage() {
         // Ganti URL font ini jika kamu punya font .ttf lain secara online
         fontUrl: 'https://github.com/google/fonts/raw/main/ofl/montserrat/Montserrat-Bold.ttf',
       });
-      const response = await fetch(`/api/generate-cover?${params.toString()}`);
+      const response = await fetch(`/api/generate?${params.toString()}`);
 
       if (!response.ok) {
         const errorData = await response.json();
