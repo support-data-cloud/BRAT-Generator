@@ -26,7 +26,7 @@ export default function HomePage() {
     });
 
     try {
-      const response = await fetch(`/api/generate-cover?${params.toString()}`);
+      const response = await fetch(`/api/generate?${params.toString()}`);
       if (!response.ok) {
         const errData = await response.json();
         throw new Error(errData.error || 'Gagal membuat gambar.');
