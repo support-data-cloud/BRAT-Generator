@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "functions": {
+    "api/generate.js": {
+      "runtime": "nodejs18.x", // Atau versi LTS Node.js yang lebih baru jika didukung
+      "maxDuration": 15 // Opsional: Tingkatkan durasi jika download font lama (detik)
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",  // Semua request ke /api/...
+      "dest": "/api/$1"    // Akan diarahkan ke file di folder /api
+    },
+    {
+      "src": "/(.*)",       // Semua request lainnya
+      "dest": "/public/$1" // Akan disajikan dari folder /public
+    }
+  ]
+    }
