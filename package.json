@@ -1,0 +1,22 @@
+{
+  "name": "my-simple-brat-generator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.3",  // Atau versi terbaru Next.js
+    "react": "18.3.1", // Atau versi terbaru React
+    "react-dom": "18.3.1", // Atau versi terbaru React DOM
+    "canvas": "^2.11.2", // Untuk gambar di backend
+    "axios": "^1.7.2"   // Untuk mengambil font dari URL
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
+}
